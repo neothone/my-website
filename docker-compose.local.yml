@@ -1,0 +1,57 @@
+version: '3'
+
+services:
+    # php
+    php:
+        build:
+            context: ./docker/php
+            dockerfile: Dockerfile-local
+            args:
+                TIMEZONE: ${DOCKER_TIMEZONE}
+        container_name: ${DOCKER_PROJECT_NAME}_php
+        expose:
+            - '9000'
+        volumes:
+            - .:/var/www/html
+            - ./var/log/php:/var/log
+
+    # nginx
+    nginx:
+        image: nginx:alpine
+        container_name: ${DOCKER_PROJECT_NAME}_nginx
+        depends_on:
+            - php
+            - database
+        volumes:
+            - ./docker/nginx/default-local.conf:/etc/nginx/conf.d/default.conf
+            - .:/var/www/html
+            - ./var/log/nginx:/var/log/nginx
+        environment:
+            - DOMAIN_NAME=${DOCKER_LOCAL_VIRTUAL_HOST}
+
+    # MySQL
+    database:
+        image: mysql:8
+        container_name: ${DOCKER_PROJECT_NAME}_mysql
+        volumes:
+            - ./var/mysql-data:/var/lib/mysql
+        command: mysqld --socket="/tmp/mysql.sock" --bind-address=0.0.0.0 --default-authentication-plugin=mysql_native_password
+        environment:
+            - MYSQL_ROOT_PASSWORD=${DOCKER_LOCAL_MYSQL_ROOT_PASSWORD}
+            - MYSQL_ROOT_HOST=%
+            - MYSQL_DATABASE=${DOCKER_LOCAL_MYSQL_DATABASE}
+            - MYSQL_USER=${DOCKER_LOCAL_MYSQL_USER}
+            - MYSQL_PASSWORD=${DOCKER_LOCAL_MYSQL_PASSWORD}
+            - DOMAIN_NAME=db.${DOCKER_LOCAL_VIRTUAL_HOST}
+
+    mailhog:
+        image: mailhog/mailhog
+        container_name: ${DOCKER_PROJECT_NAME}_mailhog
+        ports:
+            - 1025:1025 # smtp server
+            - 8025:8025 # web ui
+
+networks:
+    default:
+        external:
+            name: ${DOCKER_PROJECT_NAME}
