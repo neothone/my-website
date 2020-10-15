@@ -360,7 +360,7 @@
 <!-- Typed -->
 <script src="js/typed.js"></script>
 <script src="js/typed.init.js"></script>
-<!-- Icons -->l
+<!-- Icons -->
 <script src="js/feather.min.js"></script>
 <script src="js/unicons-monochrome.js"></script>
 <!-- Main Js -->
