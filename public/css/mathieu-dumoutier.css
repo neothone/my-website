@@ -1,0 +1,17 @@
+.bg-home {
+    background: #f8f9fc url(../images/personal/bg01.png) no-repeat 70% bottom;
+    background-size: cover;
+}
+@media (max-width: 768px) {
+    .bg-home {
+        background: #f8f9fc url(../images/personal/bg01.png) no-repeat 79% -10%;
+    }
+}
+
+@media (max-width: 360px) {
+    .bg-home {
+        background: none;
+    }
+}
+
+
