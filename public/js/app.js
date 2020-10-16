@@ -95,14 +95,6 @@
         return false;
     }); 
 
-    //Tooltip
-    $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-    });
-    //Popover
-    $(function () {
-        $('[data-toggle="popover"]').popover()
-    });
     //Feather icon
     feather.replace()
 

@@ -68,7 +68,7 @@
             <!-- Navigation Menu-->
             <ul class="navigation-menu">
                 <li><a href="#home" class="mouse-down">Accueil</a></li>
-                <li><a href="#portfolio" class="mouse-down">Portofolio</a></li>
+                <li><a href="#portfolio" class="mouse-down">Particpations</a></li>
                 <li><a href="https://blog.mathieu.dumoutier.fr" target="_blank">Blog</a></li>
                 <li><a href="https://blog.mathieu.dumoutier.fr/tag/knowledge-base/" target="_blank">Base de connaissances</a></li>
                 <li><a href="#contact" class="mouse-down">Contact</a></li>
@@ -84,10 +84,10 @@
         <div class="row align-items-center">
             <div class="col-lg-8 col-md-9">
                 <div class="title-heading mt-4">
-                    <h1 class="display-3 font-weight-bold mb-3">Hello ! Je suis <br> <span class="element" data-elements="Mathieu Dumoutier, Web Developer"></span> </h1>
+                    <h1 class="display-3 font-weight-bold mb-3">Hello ! Je suis <br> <span class="element" data-elements="Mathieu Dumoutier, développeur Web"></span> </h1>
                     <p class="para-desc text-muted">Depuis 2008, je réalise des sites Internet, des back-offices, des APIs. Seul ou en équipe je met mes compétences aux services de projets tout en continuant d'apprendre.</p>
                     <div class="mt-4 pt-2">
-                        <a href="#portfolio" class="btn btn-primary mt-2 mr-2 mouse-down"><i class="mdi mdi-camera"></i> Voir mes participations</a>
+                        <a href="#about-me" class="btn btn-primary mt-2 mr-2 mouse-down"><i class="mdi mdi-camera"></i> Qui suis-je ?</a>
                         <a href="#contact" class="btn btn-outline-primary mt-2 mouse-down"><i class="mdi mdi-cloud-download"></i> Contactez-moi</a>
                     </div>
                 </div>
@@ -99,7 +99,7 @@
 
 <!-- About Start -->
 <section class="section pb-5">
-    <div class="container">
+    <div class="container" id="about-me">
         <div class="row align-items-center">
             <div class="col-md-6">
                 <div class="section-title">
@@ -108,11 +108,11 @@
                     <p class="text-muted mb-0">
                         La première fois je devais avoir 7 ou 8 ans : avec un ordinateur éducatif VTech, je découvre le langage de programmation BASIC. Les mots "print", "if" et "else" deviennent quotidien. Je passe mon adolescence en faisant des sites Internet et à apprendre à les mettre en ligne.
                         <br><br>
-                        20 ans plus tard je suis (toujours) développeur. Avec plus de 10 ans d'expériences professionnelles diverses dont du salariat, de l'indépendance et de l'entrepreneuriat je reste passionné.
+                        20 ans plus tard je suis (toujours) développeur. Avec plus de 10 ans d'expériences professionnelles diverses dont du salariat, de l'indépendance et de l'entreprenariat : je reste passionné !
                         <br><br>
                         Spécialiste, probablement pas loin d'être expert, sur le framework PHP Symfony je pratique régulièrement Elasticsearch ou encore RabbitMQ.
                         <br><br>
-                        Je veux continuer de développer, et le faire de mieux en mieux chaque jour.
+                        Je veux continuer de développer ; et le faire, de mieux en mieux, chaque jour.
                     </p>
                     <div class="mt-4">
                         <a href="#contact" class="btn btn-primary mouse-down"><i class="mdi mdi-phone"></i> Contactez Moi</a>
@@ -240,16 +240,16 @@
 <section class="pb-4 mt-5 border-bottom">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-lg-2 col-md-2 col-6 text-center py-4">
-                <img src="images/client/decathlon.png" class="avatar avatar-ex-sm" alt="Decathlon - Component Shop (janvier 2020)">
+            <div class="col-lg-2 col-6 text-center py-4">
+                <img src="images/client/decathlon.png" class="avatar avatar-ex-sm" alt="Decathlon - Component Shop (décembre 2019 et janvier 2020 - mission expertise elasticsearch)">
             </div><!--end col-->
 
-            <div class="col-lg-2 col-md-2 col-6 text-center py-4">
-                <img src="images/client/motoblouz.svg" class="avatar avatar-ex-sm" alt="Motoblouz.com">
+            <div class="col-lg-2 col-6 text-center py-4">
+                <img src="images/client/motoblouz.svg" class="avatar avatar-ex-sm" alt="Motoblouz.com - Lead developer">
             </div><!--end col-->
 
-            <div class="col-lg-2 col-md-2 col-6 text-center py-4">
-                <img src="images/client/auchan.png" class="avatar avatar-ex-sm" alt="Auchan E-Commerce France devenu Auchan Retail">
+            <div class="col-lg-2 col-6 text-center py-4">
+                <img src="images/client/auchan.png" class="avatar avatar-ex-sm" alt="Auchan E-Commerce France devenu Auchan Retail - Developer PHP">
             </div><!--end col-->
         </div><!--end row-->
     </div><!--end container-->
