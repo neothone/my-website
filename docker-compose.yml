@@ -25,10 +25,10 @@ services:
         image: nginx:alpine
         container_name: ${DOCKER_PROJECT_NAME}_nginx
         labels:
-            - traefik.backend=${DOCKER_PROJECT_NAME}_nginx
-            - traefik.frontend.rule=Host:${DOCKER_FRONTEND_HOST}
-            - traefik.docker.network=web
-            - traefik.port=80
+            - "traefik.enable=true"
+            - "traefik.http.routers.mathieu-website.rule=Host(`${DOCKER_FRONTEND_HOST}`, `www.${DOCKER_FRONTEND_HOST}`)"
+            - "traefik.http.routers.mathieu-website.entrypoints=websecure"
+            - "traefik.http.routers.mathieu-website.middlewares=strip-www"
         networks:
             internal: ~
             web:
