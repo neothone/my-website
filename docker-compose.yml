@@ -26,9 +26,8 @@ services:
         container_name: ${DOCKER_PROJECT_NAME}_nginx
         labels:
             - "traefik.enable=true"
-            - "traefik.http.routers.mathieu-website.rule=Host(`${DOCKER_FRONTEND_HOST}`, `www.${DOCKER_FRONTEND_HOST}`)"
+            - "traefik.http.routers.${DOCKER_PROJECT_NAME}.rule=Host(`${DOCKER_FRONTEND_HOST}`)"
             - "traefik.http.routers.mathieu-website.entrypoints=websecure"
-            - "traefik.http.routers.mathieu-website.middlewares=strip-www"
         networks:
             internal: ~
             web:
