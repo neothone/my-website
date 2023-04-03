@@ -82,8 +82,7 @@
             <ul class="navigation-menu">
                 <li><a href="#home" class="mouse-down">Accueil</a></li>
                 <li><a href="#portfolio" class="mouse-down">Particpations</a></li>
-                <li><a href="https://blog.mathieu.dumoutier.fr" target="_blank">Blog</a></li>
-                <li><a href="https://blog.mathieu.dumoutier.fr/tag/knowledge-base/" target="_blank">Base de connaissances</a></li>
+                <li><a href="https://matdumoutier.medium.com" target="_blank">Medium (blog)</a></li>
                 <li><a href="#contact" class="mouse-down">Contact</a></li>
             </ul><!--end navigation menu-->
         </div><!--end navigation-->
