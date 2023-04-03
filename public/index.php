@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Mathieu DUMOUTIER site personnel</title>
+    <title>Mathieu DUMOUTIER développeur PHP Symfony - site personnel</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Site web personnel de Mathieu DUMOUTIER" />
-    <meta name="keywords" content="mathieu, dumoutier, developer, php" />
+    <meta name="description" content="Site web personnel de Mathieu DUMOUTIER développeur PHP" />
+    <meta name="keywords" content="mathieu, dumoutier, developer, php, symfony" />
     <meta name="author" content="Mathieu DUMOUTIER" />
     <meta name="email" content="mathieu@dumoutier.fr" />
     <meta name="website" content="https://mathieu.dumoutier.fr" />
@@ -23,8 +23,21 @@
     <link href="css/style-dark.css" rel="stylesheet" type="text/css" id="theme-opt" />
     <link href="css/colors/skyblue.css" rel="stylesheet" id="color-opt">
     <link href="css/mathieu-dumoutier.css" rel="stylesheet" type="text/css">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180229070-3"></script>
+    <!-- Matomo -->
+    <script>
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            var u="//matomo.8tier.fr/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '2']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+        })();
+    </script>
+    <!-- End Matomo Code -->
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -106,13 +119,12 @@
                     <h4 class="title">A propos de moi</h4>
                     <h6 class="text-primary mb-4">Je suis un développeur web passionné</h6>
                     <p class="text-muted mb-0">
-                        La première fois je devais avoir 7 ou 8 ans : avec un ordinateur éducatif VTech, je découvre le langage de programmation BASIC. Les mots "print", "if" et "else" deviennent quotidien. Je passe mon adolescence en faisant des sites Internet et à apprendre à les mettre en ligne.
+                        J’ai découvert la programmation lorsque je devais avoir 7 ou 8 ans,  avec un ordinateur
+                        éducatif... Les mots "print", "if" et "else" deviennent mon quotidien. Durant mon adolescence je fais des sites Internet et apprends à les mettre en ligne.
                         <br><br>
-                        20 ans plus tard je suis (toujours) développeur. Avec plus de 10 ans d'expériences professionnelles diverses dont du salariat, de l'indépendance et de l'entreprenariat : je reste passionné !
+                        25 ans plus tard, je suis (toujours) développeur. Je reste passionné : mon crédo principal est le framework PHP Symfony mais je pratique régulièrement les stacks d’outils open source.
                         <br><br>
-                        Spécialiste, probablement pas loin d'être expert, sur le framework PHP Symfony je pratique régulièrement Elasticsearch ou encore RabbitMQ.
-                        <br><br>
-                        Je veux continuer de développer ; et le faire, de mieux en mieux, chaque jour.
+                        Je veux continuer de développer sur des projets où je perçois de la valeur, et le faire, de mieux en mieux, chaque jour ; seul ou en équipe.
                     </p>
                     <div class="mt-4">
                         <a href="#contact" class="btn btn-primary mouse-down"><i class="mdi mdi-phone"></i> Contactez Moi</a>
@@ -151,16 +163,33 @@
                                     </p>
                                 </div>
                                 <ul class="job-facts list-unstyled">
-                                    <li class="list-inline-item text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check fea icon-sm text-success mr-1"><polyline points="20 6 9 17 4 12"></polyline></svg> 12 années d'expériences</li>
+                                    <li class="list-inline-item text-muted"><svg xmlns="http://www.w3.org/2000/svg"
+                                                                                 width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check fea icon-sm text-success mr-1"><polyline points="20 6 9 17 4 12"></polyline></svg> 15 années d'expériences</li>
                                     <li class="list-inline-item text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check fea icon-sm text-success mr-1"><polyline points="20 6 9 17 4 12"></polyline></svg> PHP</li>
                                     <li class="list-inline-item text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check fea icon-sm text-success mr-1"><polyline points="20 6 9 17 4 12"></polyline></svg> Symfony</li>
                                     <li class="list-inline-item text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check fea icon-sm text-success mr-1"><polyline points="20 6 9 17 4 12"></polyline></svg> API Platform</li>
                                     <li class="list-inline-item text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check fea icon-sm text-success mr-1"><polyline points="20 6 9 17 4 12"></polyline></svg> PHPUnit / Behat</li>
                                     <li class="list-inline-item text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check fea icon-sm text-success mr-1"><polyline points="20 6 9 17 4 12"></polyline></svg> Elasticsearch</li>
-                                    <li class="list-inline-item text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check fea icon-sm text-success mr-1"><polyline points="20 6 9 17 4 12"></polyline></svg> RabbitMQ</li>
+                                    <li class="list-inline-item text-muted"><svg xmlns="http://www.w3.org/2000/svg"
+                                                                                 width="24" height="24" viewBox="0 0
+                                                                                 24 24" fill="none"
+                                                                                 stroke="currentColor"
+                                                                                 stroke-width="2"
+                                                                                 stroke-linecap="round"
+                                                                                 stroke-linejoin="round"
+                                                                                 class="feather feather-check fea icon-sm text-success mr-1"><polyline points="20 6 9 17 4 12"></polyline></svg> Panther</li>
                                     <li class="list-inline-item text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check fea icon-sm text-success mr-1"><polyline points="20 6 9 17 4 12"></polyline></svg> HTML / CSS</li>
                                     <li class="list-inline-item text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check fea icon-sm text-success mr-1"><polyline points="20 6 9 17 4 12"></polyline></svg> SQL</li>
-                                    <li class="list-inline-item text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check fea icon-sm text-success mr-1"><polyline points="20 6 9 17 4 12"></polyline></svg> Javascript</li>
+                                    <li class="list-inline-item text-muted"><svg xmlns="http://www.w3.org/2000/svg"
+                                                                                 width="24" height="24" viewBox="0 0
+                                                                                 24 24" fill="none"
+                                                                                 stroke="currentColor"
+                                                                                 stroke-width="2"
+                                                                                 stroke-linecap="round"
+                                                                                 stroke-linejoin="round"
+                                                                                 class="feather feather-check fea
+                                                                                 icon-sm text-success mr-1"><polyline
+                                                    points="20 6 9 17 4 12"></polyline></svg> Javascript / Vue JS</li>
                                     <li class="list-inline-item text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check fea icon-sm text-success mr-1"><polyline points="20 6 9 17 4 12"></polyline></svg> SOAP / REST</li>
                                     <li class="list-inline-item text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check fea icon-sm text-success mr-1"><polyline points="20 6 9 17 4 12"></polyline></svg> Docker</li>
                                     <li class="list-inline-item text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check fea icon-sm text-success mr-1"><polyline points="20 6 9 17 4 12"></polyline></svg> SCRUM</li>
@@ -178,7 +207,7 @@
             <div class="col-12">
                 <div class="section-title mb-4 pb-2">
                     <h4 class="title mb-4">Mes participations récentes</h4>
-                    <p class="text-muted para-desc mb-0">Voici un aperçu de mes réalisations personnelles et collaborations récentes.</p>
+                    <p class="text-muted para-desc mb-0">Voici un aperçu de mes réalisations personnelles et collaborations.</p>
                 </div>
             </div><!--end col-->
         </div><!--end row-->
@@ -190,11 +219,12 @@
                         <img src="images/personal/1.png" class="img-fluid" alt="work-image">
                         <div class="overlay-work bg-dark"></div>
                         <div class="content">
-                            <h5 class="mb-0" style="color: black;">key-share.io</h5>
+                            <h5 class="mb-0" style="color: black;">imacp.app</h5>
                             <h6 class="text-light tag mb-0">Projet personnel</h6>
                         </div>
                         <div class="icons text-center">
-                            <a href="https://key-share.io" target="_blank" class="text-primary work-icon bg-white d-inline-block rounded-pill"><i data-feather="camera" class="fea icon-sm"></i></a>
+                            <a href="https://imacp.app" target="_blank" class="text-primary work-icon bg-white
+                            d-inline-block rounded-pill"><i data-feather="camera" class="fea icon-sm"></i></a>
                         </div>
                     </div>
                 </div>
