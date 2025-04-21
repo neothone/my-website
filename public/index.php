@@ -82,7 +82,8 @@
             <ul class="navigation-menu">
                 <li><a href="#home" class="mouse-down">Accueil</a></li>
                 <li><a href="#portfolio" class="mouse-down">Particpations</a></li>
-                <li><a href="https://matdumoutier.medium.com" target="_blank">Medium (blog)</a></li>
+                <li><a href="https://dev.to/neothone" target="_blank">Dev.to</a></li>
+                <li><a href="https://mathieu-dumoutier.medium.com" target="_blank">Medium</a></li>
                 <li><a href="#contact" class="mouse-down">Contact</a></li>
             </ul><!--end navigation menu-->
         </div><!--end navigation-->
@@ -365,6 +366,7 @@
 
             <div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
                 <ul class="list-unstyled social-icon social text-sm-right mb-0">
+                    <li class="list-inline-item mb-0"><a href="https://github.com/neothone" target="_blank" class="rounded"><i data-feather="github" class="fea icon-sm fea-social"></i></a></li>
                     <li class="list-inline-item mb-0"><a href="https://twitter.com/matdumoutier" target="_blank" class="rounded"><i data-feather="twitter" class="fea icon-sm fea-social"></i></a></li>
                     <li class="list-inline-item mb-0"><a href="https://www.linkedin.com/in/mathieudumoutier/" target="_blank" class="rounded"><i data-feather="linkedin" class="fea icon-sm fea-social"></i></a></li>
                 </ul><!--end icon-->
